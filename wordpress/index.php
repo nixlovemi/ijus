@@ -748,11 +748,13 @@
                         </div>
                         <!-- Left and right controls -->
                         <span class="left carousel-control" href="#myCarousel" data-slide="prev">
-                            <span class="glyphicon text-primary glyphicon-chevron-left"></span>
+                            <!--<span class="glyphicon text-primary glyphicon-chevron-left"></span>-->
+                            <span class="fa fa-chevron-left" style="color: #70c416; background-color: white; cursor: pointer; position: relative; top: 50%;"></span>
                             <span class="sr-only">Previous</span>
                         </span>
                         <span class="right carousel-control" href="#myCarousel" data-slide="next">
-                            <span class="glyphicon text-primary glyphicon-chevron-right"></span>
+                            <!--<span class="glyphicon text-primary glyphicon-chevron-right"></span>-->
+                            <span class="fa fa-chevron-right" style="color: #70c416; background-color: white; cursor: pointer; position: relative; top: 50%;"></span>
                             <span class="sr-only">Next</span>
                         </span>
                     </div>
@@ -938,11 +940,11 @@
                             </div>
                             <!-- Left and right controls -->
                             <span class="left carousel-control" href="#myCarousel-news" data-slide="prev-news" style="margin-left: -105px;">
-                                <span class="glyphicon text-primary glyphicon-chevron-left"></span>
+                                <span class="fa fa-chevron-left" style="color: #70c416; cursor: pointer;"></span>
                                 <span class="sr-only">Previous</span>
                             </span>
                             <span class="right carousel-control" href="#myCarousel-news" data-slide="next-news" style="margin-right: -100px;">
-                                <span class="glyphicon text-primary glyphicon-chevron-right"></span>
+                                <span class="fa fa-chevron-right" style="color: #70c416; cursor: pointer;"></span>
                                 <span class="sr-only">Next</span>
                             </span>
                         </div>
