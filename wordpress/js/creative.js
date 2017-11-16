@@ -1,4 +1,5 @@
-var HOME_URL = "http://ijus1.hospedagemdesites.ws/novo/";
+var HOME_URL = "http://ijus.org.br/novo/";
+var BLOG_URL = HOME_URL + "wp-content/themes/ijus2017/";
 
 (function($) {
     "use strict"; // Start of use strict
@@ -87,12 +88,12 @@ var HOME_URL = "http://ijus1.hospedagemdesites.ws/novo/";
             //Definir classe
             if (scroll > 100) {
                 navBar.style="height:5px;min-height: 66px;";
-                logo.src=HOME_URL+"img/logotipo-passaro-verde.png";
+                //logo.src=BLOG_URL+"img/logotipo-passaro-verde.png";
                 logo.style = "margin-top: -6px;";
                 navBarNav.style="margin-top: 0px;";
             } else{
                 navBar.style = "height:130px;min-height: 100px;";
-                logo.src=HOME_URL+"img/logotipo.png";
+                //logo.src=BLOG_URL+"img/logotipo.png";
                 navBarNav.style="margin-top: 36px;";
             }
         }
