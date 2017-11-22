@@ -1,6 +1,6 @@
+<?php
 /* Template Name: IJUS - Homepage */
 
-<?php
 get_header();
 ?>
 
@@ -67,726 +67,239 @@ if($quemSomosTitulo != "" || $quemSomosDesc != ""){
 }
 ?>
 
-<section class="bg-white" id="destaques">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <a href="views/noticias/01-07/noticia.php" class="link-home"><h2  class="section-heading primary" style="display:inline">Destaque</h2></a>
-                <hr class="primary">
-                <div class="col-lg-4 col-lg-offset-2 custom-column">
-                    <a href="views/noticias/23-08/noticia.php"><img src="<?php bloginfo('template_url'); ?>/img/noticias/23-08/1.jpg" class="img-destaques img-responsive" alt="" width="330"></a>
-                </div>
-                <div class="col-lg-5">
-                    <h4 class="text-primary text-left"><strong>Juruti se prepara para implantar o RedeSimples</strong></h4>
-                    <p class="text-muted text-left">
-                        O Serviço Brasileiro de Apoio às Micro e Pequenas Empresas (Sebrae) apresentou os programas “RedeSimples” e “Prêmio Prefeito Empreendedor”, que fazem parte do plano de Políticas Públicas de Apoio aos Pequenos Negócios, ontem (23), em Juruti. O evento, realizado na sede do Instituto Juruti Sustentável (IJUS) contou com a presença do Prefeito Henrique Costa e vice-prefeito West Lima, assim como representantes das Secretarias de Planejamento, Infraestrutura, Meio...
-                    </p>
-                    <br><br>
-                </div>
-            </div>
-        </div>
-        <br><br>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <div class="header-footer custom-size-destaques">
-                    <a href="#portfolio" class="page-scroll"><i class="fa fa-2x fa-angle-double-down" aria-hidden="true"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<?php
+$destaqueTitulo = trim( simple_fields_value('home_box_destaque_fields_titulo') );
+$destaqueDesc   = trim( simple_fields_value('home_box_destaque_fields_descricao') );
+$destaqueImg    = trim( simple_fields_value('home_box_destaque_fields_imagem') );
+$destaqueImgLnk = trim( simple_fields_value('home_box_destaque_fields_img_link') );
 
-<section class="no-padding" id="portfolio">
-    <div class="container-fluid">
-        <div class="row no-gutter popup-gallery text-center">
-            <h2 class="section-heading primary">Galeria</h2>
-            <hr class="primary">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <div class="row no-gutter popup-gallery">
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/lago_do_jara_juruti_02.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/lago_do_jara_juruti_02.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Lago do Jará</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/lago_do_jara_juruti_03.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/lago_do_jara_juruti_03.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Lago do Jará</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/lago_do_jara_juruti_04.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/lago_do_jara_juruti_04.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Lago do Jará</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/lago_do_jara_juruti_05.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/lago_do_jara_juruti_05.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Lago do Jará</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/lago_do_jara_juruti_06.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/lago_do_jara_juruti_06.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Lago do Jará</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/lago_do_jara_juruti_07.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/lago_do_jara_juruti_07.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Lago do Jará</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+if($destaqueTitulo != "" && $destaqueDesc != ""){
+    $strDestaqueLnk = ($destaqueImgLnk != "") ? $destaqueImgLnk: "javascript:;";
+    $strDestaqueImg = ($destaqueImg != "") ? $destaqueImg: URL_IMG_NO_IMAGE;
+    ?>
+    
+    <section class="bg-white" id="destaques">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <a href="<?php echo $strDestaqueLnk; ?>" class="link-home">
+                        <h2 class="section-heading primary" style="display:inline">DESTAQUE</h2>
+                    </a>
+                    <hr class="primary">
+                    <div class="col-lg-4 col-lg-offset-2 custom-column">
+                        <a href="views/noticias/23-08/noticia.php">
+                            <img src="<?php echo $strDestaqueImg; ?>" class="img-destaques img-responsive" alt="" width="330" />
+                        </a>
                     </div>
-                    <div class="item ">
-                        <div class="row no-gutter popup-gallery">
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/embarcacao-local-juruti.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/embarcacao-local-juruti.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Embarcação local Juruti</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/embarcacao-local-juruti_03.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/embarcacao-local-juruti_03.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Embarcação local Juruti</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/frutaria-local-artesanato-juruti.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/frutaria-local-artesanato-juruti.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Frutaria local</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/frutaria-local-juruti.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/frutaria-local-juruti.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Frutaria local</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/frutaria_local_juruti_02.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/frutaria_local_juruti_02.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Frutaria local</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/lago_do_jara_juruti_01.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/lago_do_jara_juruti_01.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Lago do Jará</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
+                    <div class="col-lg-5">
+                        <h4 class="text-primary text-left">
+                            <strong><?php echo $destaqueTitulo; ?></strong>
+                        </h4>
+                        <div class="text-muted text-left">
+                            <?php
+                            echo nl2br($destaqueDesc);
+                            ?>
                         </div>
-                    </div>
-                    <div class="item ">
-                        <div class="row no-gutter popup-gallery">
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/lago_mole_juruti_02.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/lago_mole_juruti_02.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Lago Mole</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/lago_mole_juruti_03.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/lago_mole_juruti_03.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Lago Mole</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/lago_mole_juruti_04.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/lago_mole_juruti_04.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Lago Mole</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/lago_mole_juruti_05.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/lago_mole_juruti_05.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Lago Mole</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/lago_mole_juruti_06.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/lago_mole_juruti_06.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Lago Mole</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/lago_mole_juruti_07.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/lago_mole_juruti_07.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Lago Mole</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item ">
-                        <div class="row no-gutter popup-gallery">
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/paisagem_local_juruti.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/paisagem_local_juruti.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Paisagem local Juruti</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/pescador_local_juruti.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/pescador_local_juruti.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Pescador local Juruti</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/por_do_sol_em_juruti.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/por_do_sol_em_juruti.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Por do sol em Juruti</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/portal_festribal_2017_juruti.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/portal_festribal_2017_juruti.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Festribal 2017</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/portal_festribal_orla_2017_juruti.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/portal_festribal_orla_2017_juruti.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Festribal orla 2017</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/praca_da_cidade_juruti.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/praca_da_cidade_juruti.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Praça da cidade de Juruti</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item ">
-                        <div class="row no-gutter popup-gallery">
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/projeto_reviravolta_juruti_01.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/projeto_reviravolta_juruti_01.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Projeto Reviravolta Juruti</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/projeto_reviravolta_juruti_02.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/projeto_reviravolta_juruti_02.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Projeto Reviravolta Juruti</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/projeto_reviravolta_juruti_03.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/projeto_reviravolta_juruti_03.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Projeto Reviravolta Juruti</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/projeto_reviravolta_juruti_04.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/projeto_reviravolta_juruti_04.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Projeto Reviravolta Juruti</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/projeto_reviravolta_juruti_05.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/projeto_reviravolta_juruti_05.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Projeto Reviravolta Juruti</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/projeto_reviravolta_juruti_06.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/projeto_reviravolta_juruti_06.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Projeto Reviravolta Juruti</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item ">
-                        <div class="row no-gutter popup-gallery">
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/projeto_reviravolta_juruti_07.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/projeto_reviravolta_juruti_07.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Projeto Reviravolta Juruti</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/projeto_reviravolta_juruti_08.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/projeto_reviravolta_juruti_08.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Projeto Reviravolta Juruti</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/projeto_reviravolta_juruti_09.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/projeto_reviravolta_juruti_09.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Projeto Reviravolta Juruti</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/projeto_reviravolta_juruti_10.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/projeto_reviravolta_juruti_10.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Projeto Reviravolta Juruti</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/transporte_de_boi_juruti.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/transporte_de_boi_juruti.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Transporte de Boi Juruti</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/praca_da_cidade_juruti_02.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/praca_da_cidade_juruti_02.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Praça da cidade de Juruti</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item ">
-                        <div class="row no-gutter popup-gallery">
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/atividade_geral_projetos_vencedores_2017_juruti.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/atividade_geral_projetos_vencedores_2017_juruti.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Atividade Geral Projetos Vencedores</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/edilane_c_batista_praca_juruti.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/edilane_c_batista_praca_juruti.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Edilane Batista</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/entrega_simbolica_de_cheques_projetos_vencedores_2017_juruti.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/entrega_simbolica_de_cheques_projetos_vencedores_2017_juruti.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Entrega Simbolica de cheques projetosvencedores</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/jose_m_p_marinho_lago_jara.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/jose_m_p_marinho_lago_jara.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>José Marinho</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/projeto_vencedor_2017_juruti.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/projeto_vencedor_2017_juruti.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Projeto vencedor</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/projeto_vencedor_2017_juruti_01.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/projeto_vencedor_2017_juruti_01.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Projeto vencedor</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item ">
-                        <div class="row no-gutter popup-gallery">
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/vivaldo_l_santos_orla_juruti.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/vivaldo_l_santos_orla_juruti.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Vivaldo Santos</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/lago_do_jara_juruti_08.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/lago_do_jara_juruti_08.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Lago do Jará</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/lago_mole_juruti_08.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/lago_mole_juruti_08.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Lago Mole</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/39.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/39.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Cidade de Juruti</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/40.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/40.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Praça da cidade</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href="img/portfolio/fullsize/41.jpg" class="portfolio-box">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/portfolio/thumbnails/41.jpg" class="img-responsive" alt="">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                <i class="fa fa-2x fa-search"></i>
-                                                <p>Cidade de Juruti</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                        <br><br>
                     </div>
                 </div>
-                <!-- Left and right controls -->
-                <span class="left carousel-control" href="#myCarousel" data-slide="prev">
-                    <!--<span class="glyphicon text-primary glyphicon-chevron-left"></span>-->
-                    <span class="fa fa-chevron-left" style="color: #70c416; background-color: white; cursor: pointer; position: relative; top: 50%;"></span>
-                    <span class="sr-only">Previous</span>
-                </span>
-                <span class="right carousel-control" href="#myCarousel" data-slide="next">
-                    <!--<span class="glyphicon text-primary glyphicon-chevron-right"></span>-->
-                    <span class="fa fa-chevron-right" style="color: #70c416; background-color: white; cursor: pointer; position: relative; top: 50%;"></span>
-                    <span class="sr-only">Next</span>
-                </span>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="header-footer custom-size-destaques">
+                        <a href="#portfolio" class="page-scroll"><i class="fa fa-2x fa-angle-double-down" aria-hidden="true"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <?php
+}
+?>
+
+<?php
+$galeriaImgTit = simple_fields_values('home_box_galeria_fields_imagem_titulo');
+$galeriaImgUrl = simple_fields_values('home_box_galeria_fields_imagem_url');
+
+if( count($galeriaImgTit) > 0 ){
+    $qtQuebra  = 6;
+    $qtAtual   = 0;
+    $firstLoop = true;
+    $cssItem   = " active ";
+
+    echo "<section class='no-padding' id='portfolio'>";
+    echo "  <div class='container-fluid'>";
+    echo "    <div class='row no-gutter popup-gallery text-center'>";
+    echo "      <h2 class='section-heading primary'>Galeria</h2>";
+    echo "      <hr class='primary' />";
+    echo "      <div id='myCarousel' class='carousel slide lelex' data-ride='carousel'>";
+    echo "        <div class='carousel-inner'>";
+
+    for($i=0; $i<count($galeriaImgTit); $i++){
+        $vTitulo = $galeriaImgTit[$i];
+        $vImg    = $galeriaImgUrl[$i];
+
+        $imageId     = get_image_id($vImg);
+        $image_thumb = wp_get_attachment_image_src($imageId, "ijus-home-galeria-thumb");
+        $urlThumb    = $image_thumb[0];
+
+        if($qtAtual == 0){
+            echo "  <div class='item $cssItem'>";
+            echo "    <div class='row no-gutter popup-gallery'>";
+        }
+
+        echo "          <div class='col-lg-4 col-sm-6'>
+                            <a href='$vImg' class='portfolio-box'>
+                                <img src='$urlThumb' class='img-responsive' alt=''>
+                                <div class='portfolio-box-caption'>
+                                    <div class='portfolio-box-caption-content'>
+                                        <div class='project-category text-faded'>
+                                            <i class='fa fa-2x fa-search'></i>
+                                            <p>$vTitulo</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>";
+
+        $qtAtual++;
+        
+        if($qtAtual == $qtQuebra){
+            echo "    </div>";
+            echo "  </div>";
+
+            $qtAtual = 0;
+        }
+
+        if($firstLoop){
+            $firstLoop = false;
+            $cssItem   = "";
+        }
+    }
+
+    if($qtAtual != 0){
+        echo "        </div>";
+        echo "      </div>";
+    }
+
+    echo "        </div>";
+
+    echo "        <span class='left carousel-control' href='#myCarousel' data-slide='prev'>
+                      <!--<span class='glyphicon text-primary glyphicon-chevron-left'></span>-->
+                      <span class='fa fa-chevron-left' style='color: #70c416; background-color: white; cursor: pointer; position: relative; top: 50%;'></span>
+                      <span class='sr-only'>Previous</span>
+                  </span>
+                  <span class='right carousel-control' href='#myCarousel' data-slide='next'>
+                      <!--<span class='glyphicon text-primary glyphicon-chevron-right'></span>-->
+                      <span class='fa fa-chevron-right' style='color: #70c416; background-color: white; cursor: pointer; position: relative; top: 50%;'></span>
+                      <span class='sr-only'>Next</span>
+                  </span>";
+
+    echo "      </div>";
+    echo "    </div>";
+    echo "  </div>";
+    echo "</section>";
+}
+?>
+
+<?php
+$noticiasQtde = simple_fields_value('home_box_noticias_fields_nr_itens');
+$noticiasQtde = ($noticiasQtde == "") ? 8 : $noticiasQtde;
+
+$queryObject = new WP_Query( "post_type=noticias&posts_per_page=$noticiasQtde&orderby=date&post_status=publish" );
+if ($queryObject->have_posts()) {
+    echo "<section class='bg-white' id='noticias'>";
+    echo "  <div class='container text-center news-section'>";
+    echo "    <div class='row'>";
+    echo "      <div class='col-lg-12'>";
+    echo "        <h2 class='section-heading primary'>Notícias</h2>";
+    echo "        <hr class='primary'>";
+    echo "      </div>";
+    echo "    </div>";
+    echo "    <div class='row'>";
+    echo "      <div class='col-lg-12 text-center'>";
+    echo "        <div id='myCarousel-news' class='carousel slide' data-ride='carousel'>";
+    echo "          <div class='carousel-inner'>";
+
+    $qtAtual2   = 0;
+    $qtQuebra2  = 4;
+    $firstLoop2 = true;
+    $cssItem2   = " active ";
+
+    while ($queryObject->have_posts()) {
+        $queryObject->the_post();
+
+        $vTitle            = get_the_title();
+        $vUrlNot           = get_the_permalink();
+        $post_thumbnail_id = get_post_thumbnail_id(get_the_ID());
+        $vImgPost          = wp_get_attachment_thumb_url( $post_thumbnail_id );
+
+        $vTexto            = get_the_excerpt();
+        $vTexto            = substr($vTexto, 0, 190) . "...";
+
+        if($qtAtual2 == 0){
+            echo "  <div class='item $cssItem2'>";
+        }
+
+        echo "<div class='col-lg-3 news'>
+                <a href='$vUrlNot'>
+                  <img src='$vImgPost' width='200' alt=''>
+                  <h3 class='text-primary'>$vTitle</h3>
+                </a>
+                $vTexto
+              </div>";
+
+        $qtAtual2++;
+
+        if($qtAtual2 == $qtQuebra2){
+            echo "  </div>";
+
+            $qtAtual2 = 0;
+        }
+
+        if($firstLoop2){
+            $firstLoop2 = false;
+            $cssItem2   = "";
+        }
+    }
+
+    if($qtAtual2 != 0){
+        echo "      </div>";
+    }
+
+    echo "          </div>";
+    echo "          <!-- Left and right controls -->
+                    <span class='left carousel-control' href='#myCarousel-news' data-slide='prev-news' style='margin-left: -105px;'>
+                        <span class='fa fa-chevron-left' style='color: #70c416; cursor: pointer;'></span>
+                        <span class='sr-only'>Previous</span>
+                    </span>
+                    <span class='right carousel-control' href='#myCarousel-news' data-slide='next-news' style='margin-right: -100px;'>
+                        <span class='fa fa-chevron-right' style='color: #70c416; cursor: pointer;'></span>
+                        <span class='sr-only'>Next</span>
+                    </span>";
+    echo "        </div>";
+    echo "      </div>";
+    echo "    </div>";
+    echo "  </div>";
+    echo "</section>";
+}
+?>
+
+<?php
+/*
 <section class="bg-white"  id="noticias">
     <div class="container text-center news-section">
         <div class="row">
-            <div class="col-lg-12">
-                <h2 class="section-heading primary">Notícias</h2>
-                <hr class="primary">
+            
+                
+                
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
-                <div id="myCarousel-news" class="carousel slide" data-ride="carousel">
+                
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <div class="item active">
@@ -967,6 +480,8 @@ if($quemSomosTitulo != "" || $quemSomosDesc != ""){
         </div>
     </div>
 </section>
+*/
+?>
 
 <?php
 get_footer();
