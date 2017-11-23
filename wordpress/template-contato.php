@@ -1,6 +1,5 @@
-/* Template Name: IJUS - Pág. Contato */
-
 <?php
+/* Template Name: IJUS - Pág. Contato */
 get_header();
 ?>
 
