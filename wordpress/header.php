@@ -37,38 +37,40 @@
                         <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                     </button>
 
-                    <a href="#home" class="page-scroll"><img src="<?php bloginfo('template_url'); ?>/img/logotipo.png" id="logo" class="logo-img navbar-brand page-scroll"/></a>
+                    <a href="<?php bloginfo('url'); ?>" class="page-scroll">
+                        <img src="<?php bloginfo('template_url'); ?>/img/logotipo.png" id="logo" class="logo-img navbar-brand page-scroll"/>
+                    </a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a class="page-scroll" href="sobre-nos.php">Quem Somos?</a>
+                            <a class="page-scroll" href="javascript:;">Quem Somos?</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#noticias">Notícias</a>
+                            <a class="page-scroll" href="<?php bloginfo('url'); ?>/#noticias">Notícias</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="downloads.php">Editais & TDRs</a>
+                            <a class="page-scroll" href="<?php bloginfo('url'); ?>/downloads">Editais & TDRs</a>
                         </li>
                         <li>
                             <a class="page-scroll" href="transparencia.php">Portal da Transparência</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="imprensa.php">Sala da imprensa</a>
+                            <a class="page-scroll" href="<?php bloginfo('url'); ?>/sala-da-imprensa">Sala da imprensa</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="boletim-informativo.php">Boletim Informativo</a>
+                            <a class="page-scroll" href="javascript:;">Boletim Informativo</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="agenda.php">Agenda</a>
+                            <a class="page-scroll" href="javascript:;">Agenda</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="contato.php">Contato</a>
+                            <a class="page-scroll" href="javascript:;">Contato</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="investidores.php">Seja um investidor</a>
+                            <a class="page-scroll" href="javascript:;">Seja um investidor</a>
                         </li>
 
                     </ul>

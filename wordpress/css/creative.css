@@ -44,7 +44,10 @@ h6 {
 p {
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
+}
+.p-menor p{
+    margin-bottom: 4px;
 }
 .bg-primary {
   background-color: #2f8c3c;
@@ -600,4 +603,7 @@ a.white-hover:focus, a.white-hover:hover{
     .carousel-control{
         display: none;
     }
+}
+.icon-paper{
+    width: 15%;
 }
