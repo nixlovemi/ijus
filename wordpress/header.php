@@ -61,7 +61,7 @@
                             <a class="page-scroll" href="<?php bloginfo('url'); ?>/sala-da-imprensa">Sala da imprensa</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="javascript:;">Boletim Informativo</a>
+                            <a class="page-scroll" href="<?php bloginfo('url'); ?>/boletim-informativo/">Boletim Informativo</a>
                         </li>
                         <li>
                             <a class="page-scroll" href="javascript:;">Agenda</a>
