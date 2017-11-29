@@ -64,7 +64,7 @@
                             <a class="page-scroll" href="<?php bloginfo('url'); ?>/boletim-informativo/">Boletim Informativo</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="javascript:;">Agenda</a>
+                            <a class="page-scroll" href="<?php bloginfo('url'); ?>/agenda/">Agenda</a>
                         </li>
                         <li>
                             <a class="page-scroll" href="javascript:;">Contato</a>

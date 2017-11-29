@@ -610,3 +610,20 @@ a.white-hover:focus, a.white-hover:hover{
 .thumbnail-boletim{
     width: 75%;
 }
+.agenda-body td{
+    border-right: 2px solid #70c416;
+    padding: 10px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.agenda-body thead td{
+    font-weight: bold;
+}
+table.agenda-body{
+    margin: 0;
+}
+#mainNav .navbar-nav a:hover{
+    color: inherit !important;
+    text-decoration: underline;
+}
