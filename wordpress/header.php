@@ -67,7 +67,7 @@
                             <a class="page-scroll" href="<?php bloginfo('url'); ?>/agenda/">Agenda</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="javascript:;">Contato</a>
+                            <a class="page-scroll" href="<?php bloginfo('url'); ?>/contato/">Contato</a>
                         </li>
                         <li>
                             <a class="page-scroll" href="javascript:;">Seja um investidor</a>

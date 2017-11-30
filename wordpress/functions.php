@@ -17,3 +17,14 @@ function get_image_id($image_url)
     $attachment = $wpdb->get_col($wpdb->prepare("SELECT ID FROM $wpdb->posts WHERE guid='%s';", $image_url));
     return $attachment[0];
 }
+
+function send_email($vTo, $vSubject, $vBody)
+{
+    $to      = $vTo;
+    $subject = $vSubject;
+    $body    = $vBody;
+    $headers = array('Content-Type: text/html; charset=UTF-8');
+
+    $ret = wp_mail( $to, $subject, $body, $headers );
+    return $ret;
+}

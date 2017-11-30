@@ -132,9 +132,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         $to      = $vEmailCadastro;
         $subject = $vAssunto;
         $body    = $htmlMail;
-        $headers = array('Content-Type: text/html; charset=UTF-8');
-
-        $ret = wp_mail( $to, $subject, $body, $headers );
+        
+        $ret = send_email($to, $subject, $body);
         if($ret){
             $msg = "Registro enviado com sucesso!";
 
