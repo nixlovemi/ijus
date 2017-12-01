@@ -19,7 +19,7 @@ if ( has_post_thumbnail() ) {
 }
 ?>
 
-<div class="container">
+<div class="container" style="margin-top: <?php echo $vMT; ?>px">
     <div class="row">
         <div class="col-lg-12 text-center">
             <h2 class="section-heading primary"><?php echo the_title(); ?></h2>

@@ -21,11 +21,11 @@ if (has_post_thumbnail()) {
 }
 ?>
 
-<section class="bg-white" id="contact">
+<section class="bg-white" id="contact" style="margin-top: <?php echo $vMT; ?>px">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading primary">Seja um investidor</h2>
+                <h2 class="section-heading primary"><?php the_title(); ?></h2>
                 <hr class="primary">
             </div>
         </div>

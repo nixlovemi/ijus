@@ -627,3 +627,9 @@ table.agenda-body{
     color: inherit !important;
     text-decoration: underline;
 }
+.associados-icon {
+    transition: 1s;
+}
+.icon {
+    width: 50%;
+}

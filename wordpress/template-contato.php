@@ -21,7 +21,7 @@ if ( has_post_thumbnail() ) {
 }
 ?>
 
-<section class="bg-white" id="contact">
+<section class="bg-white" id="contact" style="margin-top: <?php echo $vMT; ?>px">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
