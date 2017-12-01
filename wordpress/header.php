@@ -70,7 +70,7 @@
                             <a class="page-scroll" href="<?php bloginfo('url'); ?>/contato/">Contato</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="javascript:;">Seja um investidor</a>
+                            <a class="page-scroll" href="<?php bloginfo('url'); ?>/investidores/">Seja um investidor</a>
                         </li>
 
                     </ul>

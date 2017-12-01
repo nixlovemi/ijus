@@ -1,7 +1,7 @@
     <aside class="bg-primary-dark footer">
             <div class="container text-justify text-white">
                 <div class="row">
-                    <div class="col-lg-3 col-lg-offset-2">
+                    <div class="col-lg-3 col-lg-offset-1">
                         <div class="row">
                             <div class="col-lg-12">
                                 <img src="<?php bloginfo('template_url'); ?>/img/logotipo.png" alt="">
@@ -34,27 +34,38 @@
                     <div class="col-lg-offset-1 col-lg-2 border-col">
                         <br><br>
                         <a href="sobre-nos.php" class="text-white">Quem Somos?</a> <br>
-                        <a href="index.php#noticias" class="text-white">Notícias</a> <br>
-                        <a href="downloads.php" class="text-white">Editais & TDRs</a> <br>
+                        <a href="<?php bloginfo('url'); ?>/#noticias" class="text-white">Notícias</a> <br>
+                        <a href="<?php bloginfo('url'); ?>/downloads" class="text-white">Editais & TDRs</a> <br>
                         <a href="transparencia.php" class="text-white">Portal da Transparência</a> <br>
-                        <a href="imprensa.php" class="text-white">Sala da imprensa</a> <br>
-                        <a href="boletim-informativo.php" class="text-white">Boletim Informativo</a> <br>
-                        <a href="agenda.php" class="text-white">Agenda</a> <br>
-                        <a href="contato.php" class="text-white">Contato</a> <br>
-                        <a href="investidores.php" class="text-white">Seja um investidor</a> <br>
+                        <a href="<?php bloginfo('url'); ?>/sala-da-imprensa" class="text-white">Sala da imprensa</a> <br>
+                        <a href="<?php bloginfo('url'); ?>/boletim-informativo/" class="text-white">Boletim Informativo</a> <br>
+                        <a href="<?php bloginfo('url'); ?>/agenda/" class="text-white">Agenda</a> <br>
+                        <a href="<?php bloginfo('url'); ?>/contato/" class="text-white">Contato</a> <br>
+                        <a href="<?php bloginfo('url'); ?>/investidores/" class="text-white">Seja um investidor</a> <br>
                     </div>
 
-                    <div class="col-lg-2">
+                    <div class="col-lg-4">
                         <br><br>
                         <div class="text-primary-dark">
                             NOTICIAS
                         </div>
-                        <a href="views/noticias/05-04/noticia.php" class="text-white font-footer">Alterações</a><br>
-                        <a href="views/noticias/01-07/noticia.php" class="text-white font-footer">IJUS lança edital</a><br>
-                        <a href="views/noticias/15-07/noticia.php" class="text-white font-footer">IJUS apoia produção</a><br>
-                        <a href="views/noticias/01-06/noticia.php" class="text-white font-footer">IJUS incentiva esportes</a><br>
-                    </div>
 
+                        <?php
+                        $queryObject = new WP_Query( "post_type=noticias&posts_per_page=4&orderby=date&post_status=publish" );
+                        if ($queryObject->have_posts()) {
+                            echo "<ul>";
+                            while ($queryObject->have_posts()) {
+                                $queryObject->the_post();
+
+                                $vTitle  = get_the_title();
+                                $vUrlNot = get_the_permalink();
+                                
+                                echo "<li><a href='$vUrlNot' class='text-white font-footer'>$vTitle</a></li>";
+                            }
+                            echo "</ul>";
+                        }
+                        ?>
+                    </div>
                 </div>
             </div>
         </div>
