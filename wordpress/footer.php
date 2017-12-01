@@ -33,7 +33,7 @@
 
                     <div class="col-lg-offset-1 col-lg-2 border-col">
                         <br><br>
-                        <a href="sobre-nos.php" class="text-white">Quem Somos?</a> <br>
+                        <a href="<?php bloginfo('url'); ?>/quem-somos" class="text-white">Quem Somos?</a> <br>
                         <a href="<?php bloginfo('url'); ?>/#noticias" class="text-white">Notícias</a> <br>
                         <a href="<?php bloginfo('url'); ?>/downloads" class="text-white">Editais & TDRs</a> <br>
                         <a href="transparencia.php" class="text-white">Portal da Transparência</a> <br>
