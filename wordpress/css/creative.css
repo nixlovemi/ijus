@@ -633,3 +633,10 @@ table.agenda-body{
 .icon {
     width: 50%;
 }
+.dv-btn-grp-download{
+    min-height: 50px;
+    margin-bottom: 15px;
+}
+div.download-subgrupo{
+    display: none;
+}

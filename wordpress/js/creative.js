@@ -12,6 +12,13 @@ var BLOG_URL = HOME_URL + "wp-content/themes/ijus2017/";
         }, 1250, 'easeInOutExpo');
         event.preventDefault();
     });
+    
+    $(document).on('click', 'a.download-click-grp', function(event) {
+        var grpId = $(this).data('grp-id');
+        $("div.download-subgrupo").hide();
+        $("#subgrupo-" + grpId).show();
+        event.preventDefault();
+    });
 
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
@@ -29,7 +36,7 @@ var BLOG_URL = HOME_URL + "wp-content/themes/ijus2017/";
         offset: {
             top: 100
         }
-    })
+    });
 
     // Initialize and Configure Scroll Reveal Animation
     window.sr = ScrollReveal();
