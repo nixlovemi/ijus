@@ -118,3 +118,20 @@ var BLOG_URL = HOME_URL + "wp-content/themes/ijus2017/";
     $('#myCarousel').carousel('pause');
     $('#myCarouselMain').carousel('start');
 })(jQuery); // End of use strict
+
+function loadMovMensal(){
+	var mes = $("#mov-mensal-mes").val();
+	var ano = $("#mov-mensal-ano").val();
+	
+	if(mes != "" && ano != ""){
+		$("#frm-mov-mensal").submit();
+	}
+}
+
+function loadEveTecnico(){
+	$("#frm-eve-tecnico").submit();
+}
+
+function loadVisCampo(){
+	$("#frm-vis-campo").submit();
+}

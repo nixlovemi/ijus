@@ -640,3 +640,21 @@ table.agenda-body{
 div.download-subgrupo{
     display: none;
 }
+.select{
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 9px;
+	background-color: #70c416;
+	color: #fff;
+	text-align: center;
+}
+.select-ano{
+	width: 169px;
+}
+.body-html-post-portal img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
