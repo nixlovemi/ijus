@@ -9,7 +9,7 @@ if ( has_post_thumbnail() ) {
     $vMT = 20;
     ?>
 
-    <div class="container-fluid">
+    <div class="container-fluid container-img-header">
         <div class="row">
             <img src="<?php the_post_thumbnail_url(); ?>" class="baner-sobre-nos img-responsive" alt="">
         </div>
@@ -22,7 +22,7 @@ if ( has_post_thumbnail() ) {
 <div class="container" style="margin-top: <?php echo $vMT; ?>px">
     <div class="row">
         <div class="col-lg-12 text-center">
-            <h2 class="section-heading primary">Downloads</h2>
+            <h2 class="section-heading primary">Editais & TDRs</h2>
             <hr class="primary">
         </div>
     </div>

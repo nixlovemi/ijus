@@ -55,6 +55,9 @@
                             <a class="page-scroll" href="<?php bloginfo('url'); ?>/downloads">Editais & TDRs</a>
                         </li>
                         <li>
+                            <a class="page-scroll" href="<?php bloginfo('url'); ?>/projetos">Projetos</a>
+                        </li>
+                        <li>
                             <a class="page-scroll" href="<?php bloginfo('url'); ?>/portal-da-transparencia">Portal da Transparência</a>
                         </li>
                         <li>

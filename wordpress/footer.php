@@ -36,7 +36,8 @@
                         <a href="<?php bloginfo('url'); ?>/quem-somos" class="text-white">Quem Somos?</a> <br>
                         <a href="<?php bloginfo('url'); ?>/#noticias" class="text-white">Notícias</a> <br>
                         <a href="<?php bloginfo('url'); ?>/downloads" class="text-white">Editais & TDRs</a> <br>
-                        <a href="transparencia.php" class="text-white">Portal da Transparência</a> <br>
+                        <a href="<?php bloginfo('url'); ?>/projetos" class="text-white">Projetos</a> <br>
+                        <a href="<?php bloginfo('url'); ?>/portal-da-transparencia" class="text-white">Portal da Transparência</a> <br>
                         <a href="<?php bloginfo('url'); ?>/sala-da-imprensa" class="text-white">Sala da imprensa</a> <br>
                         <a href="<?php bloginfo('url'); ?>/boletim-informativo/" class="text-white">Boletim Informativo</a> <br>
                         <a href="<?php bloginfo('url'); ?>/agenda/" class="text-white">Agenda</a> <br>

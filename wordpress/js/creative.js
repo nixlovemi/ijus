@@ -99,7 +99,7 @@ var BLOG_URL = HOME_URL + "wp-content/themes/ijus2017/";
                 logo.style = "margin-top: -6px;";
                 navBarNav.style="margin-top: 0px;";
             } else{
-                navBar.style = "height:130px;min-height: 100px;";
+                navBar.style = "height:auto;min-height: 100px;";
                 //logo.src=BLOG_URL+"img/logotipo.png";
                 navBarNav.style="margin-top: 36px;";
             }

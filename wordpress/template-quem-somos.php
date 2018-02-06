@@ -9,7 +9,7 @@ if (has_post_thumbnail()) {
     $vMT = 20;
     ?>
 
-    <div class="container-fluid">
+    <div class="container-fluid container-img-header">
         <div class="row">
             <img src="<?php the_post_thumbnail_url(); ?>" class="baner-sobre-nos img-responsive" alt="">
         </div>

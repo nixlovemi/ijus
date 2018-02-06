@@ -11,7 +11,7 @@ if ( has_post_thumbnail() ) {
     $vMT = 20;
     ?>
 
-    <div class="container-fluid">
+    <div class="container-fluid container-img-header">
         <div class="row">
             <img src="<?php the_post_thumbnail_url(); ?>" class="baner-sobre-nos img-responsive" alt="">
         </div>
@@ -51,6 +51,7 @@ if ( has_post_thumbnail() ) {
             $profissao   = (isset($_POST["profissao"])) ? $_POST["profissao"]: "";
             $instituicao = (isset($_POST["instituicao"])) ? $_POST["instituicao"]: "";
             $mensagem    = (isset($_POST["mensagem"])) ? $_POST["mensagem"]: "";
+            $recebNotic  = (isset($_POST["receb-noticias"]) && $_POST["receb-noticias"] == "S") ? "Sim": "Não";
             $ehNoticias  = ($assunto == "Quero receber noticias do ijus");
 
             $erros = "";
@@ -111,6 +112,7 @@ if ( has_post_thumbnail() ) {
                     $htmlMail .= "Profiss&atilde;o: $profissao<br />";
                     $htmlMail .= "Institui&ccedil;&atilde;o: $instituicao<br />";
                 } else {
+                    $htmlMail .= "Quero receber notícias: $recebNotic<br />";
                     $htmlMail .= "Mensagem: <i>".nl2br($mensagem)."</i><br />";
                 }
 
@@ -140,6 +142,8 @@ if ( has_post_thumbnail() ) {
         }
         ?>
 
+        <?php
+        /*
         <div class="row">
             <div class="col-lg-6">
                 <p class="section-sub-heading primary">Quero receber noticias do ijus</p>
@@ -173,6 +177,9 @@ if ( has_post_thumbnail() ) {
 
         </div>
         <br><br><br><br><br>
+        */
+        ?>
+        
         <div class="row">
             <div class="col-lg-6" style="margin-top: -71px;">
                 <p class="section-sub-heading primary">Escreva ao IJUS</p>
@@ -184,6 +191,19 @@ if ( has_post_thumbnail() ) {
                     <input name="email" value="<?php echo $vConMail; ?>" class="form-control" id="txt-email" type="email">
                     <label for="">Mensagem: </label>
                     <textarea name="mensagem" rows="8" cols="80" class="form-control" id="txt-mensagem"><?php echo $vConMens; ?></textarea>
+
+                    <br />
+                    <table border="0">
+                        <tr>
+                            <td>
+                                <label for="" class="form-label">Quero receber notícias do IJUS</label>
+                            </td>
+                            <td>
+                                <input name="receb-noticias" value="S" class="form-control" id="txt-receb-noticias" type="checkbox" style="position: relative;top: -4px;left: 10px;" />
+                            </td>
+                        </tr>
+                    </table>
+
                     <br>
                     <strong class="message"></strong>
                     <strong class="error text-danger">Preencha todos os campos</strong>
