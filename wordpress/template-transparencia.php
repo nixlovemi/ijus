@@ -192,7 +192,7 @@ if (has_post_thumbnail()) {
                 <select class="select select-ano" name="mov-mensal-ano" id="mov-mensal-ano" onChange="loadMovMensal()">
                     <option value="">Ano</option>
                     <?php
-                    for ($i = 2015; $i <= date("Y"); $i++) {
+                    for ($i = 2014; $i <= date("Y"); $i++) {
                         echo "<option value='$i'>$i</option>";
                     }
                     ?>
