@@ -46,7 +46,13 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a class="page-scroll" href="<?php bloginfo('url'); ?>/quem-somos">Quem Somos?</a>
+                            <a class="page-scroll" href="<?php bloginfo('url'); ?>/">Home</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="<?php bloginfo('url'); ?>/quem-somos">Quem Somos</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="<?php bloginfo('url'); ?>/ijus-jovem/">IJUS Jovem</a>
                         </li>
                         <li>
                             <a class="page-scroll" href="<?php bloginfo('url'); ?>/#noticias">Notícias</a>
@@ -58,13 +64,16 @@
                             <a class="page-scroll" href="<?php bloginfo('url'); ?>/projetos">Projetos</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="<?php bloginfo('url'); ?>/portal-da-transparencia">Portal da Transparência</a>
+                            <a class="page-scroll" href="<?php bloginfo('url'); ?>/portal-da-transparencia">Transparência</a>
                         </li>
                         <li>
                             <a class="page-scroll" href="<?php bloginfo('url'); ?>/sala-da-imprensa">Sala da imprensa</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="<?php bloginfo('url'); ?>/boletim-informativo/">Boletim Informativo</a>
+                            <a class="page-scroll" href="<?php bloginfo('url'); ?>/videos-downloads">Vídeos/Downloads</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="<?php bloginfo('url'); ?>/boletim-informativo/">Informativos</a>
                         </li>
                         <li>
                             <a class="page-scroll" href="<?php bloginfo('url'); ?>/agenda/">Agenda</a>
@@ -73,7 +82,7 @@
                             <a class="page-scroll" href="<?php bloginfo('url'); ?>/contato/">Contato</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="<?php bloginfo('url'); ?>/investidores/">Seja um investidor</a>
+                            <a class="page-scroll" href="<?php bloginfo('url'); ?>/investidores/">Seja um doador</a>
                         </li>
 
                     </ul>

@@ -33,16 +33,19 @@
 
                     <div class="col-lg-offset-1 col-lg-2 border-col">
                         <br><br>
-                        <a href="<?php bloginfo('url'); ?>/quem-somos" class="text-white">Quem Somos?</a> <br>
+                        <a href="<?php bloginfo('url'); ?>/" class="text-white">Home</a> <br>
+                        <a href="<?php bloginfo('url'); ?>/quem-somos" class="text-white">Quem Somos</a> <br>
+                        <a href="<?php bloginfo('url'); ?>/ijus-jovem/" class="text-white">IJUS Jovem</a> <br>
                         <a href="<?php bloginfo('url'); ?>/#noticias" class="text-white">Notícias</a> <br>
                         <a href="<?php bloginfo('url'); ?>/downloads" class="text-white">Editais & TDRs</a> <br>
                         <a href="<?php bloginfo('url'); ?>/projetos" class="text-white">Projetos</a> <br>
-                        <a href="<?php bloginfo('url'); ?>/portal-da-transparencia" class="text-white">Portal da Transparência</a> <br>
+                        <a href="<?php bloginfo('url'); ?>/portal-da-transparencia" class="text-white">Transparência</a> <br>
                         <a href="<?php bloginfo('url'); ?>/sala-da-imprensa" class="text-white">Sala da imprensa</a> <br>
-                        <a href="<?php bloginfo('url'); ?>/boletim-informativo/" class="text-white">Boletim Informativo</a> <br>
+                        <a href="<?php bloginfo('url'); ?>/videos-downloads" class="text-white">Vídeos/Downloads</a> <br>
+                        <a href="<?php bloginfo('url'); ?>/boletim-informativo/" class="text-white">Informativos</a> <br>
                         <a href="<?php bloginfo('url'); ?>/agenda/" class="text-white">Agenda</a> <br>
                         <a href="<?php bloginfo('url'); ?>/contato/" class="text-white">Contato</a> <br>
-                        <a href="<?php bloginfo('url'); ?>/investidores/" class="text-white">Seja um investidor</a> <br>
+                        <a href="<?php bloginfo('url'); ?>/investidores/" class="text-white">Seja um doador</a> <br>
                     </div>
 
                     <div class="col-lg-4">
