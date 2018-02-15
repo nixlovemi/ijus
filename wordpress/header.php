@@ -82,7 +82,7 @@
                             <a class="page-scroll" href="<?php bloginfo('url'); ?>/contato/">Contato</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="<?php bloginfo('url'); ?>/investidores/">Seja um doador</a>
+                            <a class="page-scroll" href="<?php bloginfo('url'); ?>/doador/">Seja um doador</a>
                         </li>
 
                     </ul>

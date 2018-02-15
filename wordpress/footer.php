@@ -45,7 +45,7 @@
                         <a href="<?php bloginfo('url'); ?>/boletim-informativo/" class="text-white">Informativos</a> <br>
                         <a href="<?php bloginfo('url'); ?>/agenda/" class="text-white">Agenda</a> <br>
                         <a href="<?php bloginfo('url'); ?>/contato/" class="text-white">Contato</a> <br>
-                        <a href="<?php bloginfo('url'); ?>/investidores/" class="text-white">Seja um doador</a> <br>
+                        <a href="<?php bloginfo('url'); ?>/doador/" class="text-white">Seja um doador</a> <br>
                     </div>
 
                     <div class="col-lg-4">
