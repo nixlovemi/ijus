@@ -95,11 +95,15 @@ if ( has_post_thumbnail() ) {
                     $vidDownArqTitulo    = simple_fields_values("videos_downloads_box_fields_arquivos_titulo");
                     $vidDownArqDescricao = simple_fields_values("videos_downloads_box_fields_arquivos_descricao");
                     $vidDownArqLink      = simple_fields_values("videos_downloads_box_fields_arquivos_arquivo");
+                    $vidDownUrlDestaque  = simple_fields_values("videos_downloads_box_fields_url_destaque");
 
                     for($i=0; $i<count($vidDownArqTitulo); $i++){
                         $vArqTitulo    = $vidDownArqTitulo[$i];
                         $vArqDescricao = $vidDownArqDescricao[$i];
                         $vArqLink      = $vidDownArqLink[$i];
+                        $urlDestaque   = $vidDownUrlDestaque[$i];
+                        
+                        $txtDown = ($urlDestaque != "") ? "<img width='200' height='150' src='$urlDestaque' title='Clique para baixar' alt='Clique para baixar' />": "Arquivo download";
 
                         echo "<div class='row' style='margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #ccc;'>
                                 <div class='col-lg-1'>
@@ -110,7 +114,7 @@ if ( has_post_thumbnail() ) {
                                     <p><i>$vArqDescricao</i></p>
                                     <div class='row'>
                                         <div class='col-lg-12'>
-                                            <a href='$vArqLink' target='_blank'>Arquivo download</a>
+                                            <a href='$vArqLink' target='_blank'>$txtDown</a>
                                         </div>
                                     </div>
                                 </div>
