@@ -46,6 +46,11 @@ p {
     line-height: 1.5;
     margin-bottom: 12px;
 }
+.img-responsive{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
 .p-menor p{
     margin-bottom: 4px;
 }

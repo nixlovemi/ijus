@@ -48,25 +48,43 @@
                         <a href="<?php bloginfo('url'); ?>/doador/" class="text-white">Seja um doador</a> <br>
                     </div>
 
+                    <?php
+                    $idPgHome = 4;
+                    $urlImgCalendario = simple_fields_value("home_box_calendario_fields_url_imagem", $idPgHome);
+                    $strTituloCalNoticias = ($urlImgCalendario != "") ? "&nbsp;": "NOTICIAS";
+                    ?>
+
+
                     <div class="col-lg-4">
-                        <br><br>
-                        <div class="text-primary-dark">
-                            NOTICIAS
-                        </div>
 
                         <?php
-                        $queryObject = new WP_Query( "post_type=noticias&posts_per_page=4&orderby=date&post_status=publish" );
-                        if ($queryObject->have_posts()) {
-                            echo "<ul>";
-                            while ($queryObject->have_posts()) {
-                                $queryObject->the_post();
+                        if($urlImgCalendario == ""){
+                            ?>
+                            <br><br>
+                            <div class="text-primary-dark">
+                                <?php echo $strTituloCalNoticias; ?>
+                            </div>
+                            <?php
+                        }
+                        ?>
 
-                                $vTitle  = get_the_title();
-                                $vUrlNot = get_the_permalink();
-                                
-                                echo "<li><a href='$vUrlNot' class='text-white font-footer'>$vTitle</a></li>";
+                        <?php
+                        if($urlImgCalendario != ""){
+                            echo "<a href='".get_bloginfo('url')."/agenda/' class='text-white'><img class='img-responsive' src='$urlImgCalendario' />";
+                        } else {
+                            $queryObject = new WP_Query( "post_type=noticias&posts_per_page=4&orderby=date&post_status=publish" );
+                            if ($queryObject->have_posts()) {
+                                echo "<ul>";
+                                while ($queryObject->have_posts()) {
+                                    $queryObject->the_post();
+
+                                    $vTitle  = get_the_title();
+                                    $vUrlNot = get_the_permalink();
+
+                                    echo "<li><a href='$vUrlNot' class='text-white font-footer'>$vTitle</a></li>";
+                                }
+                                echo "</ul>";
                             }
-                            echo "</ul>";
                         }
                         ?>
                     </div>
