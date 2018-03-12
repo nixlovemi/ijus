@@ -134,9 +134,19 @@ if (has_post_thumbnail()) {
 
             </div>
         </div>
-        <br>
+        <br><br><br>
 
-
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-3 text-center">
+                <h3 class="section-heading primary">Nossos Doadores:</h3>
+                <p>
+                    A mineradora Alcoa, é a primeira doadora do Instituto Juruti Sustentável (IJUS). Apoiou a concepção do projeto Juruti sustentável. Os recursos para financiar projetos em Juruti e no entorno, assim como operacionalizar as ações do instituto vem dessa doação.
+                </p>
+                <p>
+                    <img src="http://ijus.org.br/wp-content/uploads/2018/03/alcoa_vector_logo_copia.png" />
+                </p>
+            </div>
+        </div>
     </div>
 </section>
 
