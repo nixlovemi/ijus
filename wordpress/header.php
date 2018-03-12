@@ -38,7 +38,7 @@
                     </button>
 
                     <a href="<?php bloginfo('url'); ?>" class="page-scroll">
-                        <img src="<?php bloginfo('template_url'); ?>/img/logotipo.png" id="logo" class="logo-img navbar-brand page-scroll"/>
+                        <img src="<?php bloginfo('template_url'); ?>/img/logotipo-white.png" id="logo" class="logo-img navbar-brand page-scroll"/>
                     </a>
                 </div>
 

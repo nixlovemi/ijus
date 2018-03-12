@@ -1,5 +1,5 @@
-var HOME_URL = "http://ijus.org.br/novo/";
-var BLOG_URL = HOME_URL + "wp-content/themes/ijus2017/";
+var HOME_URL = "http://ijus.org.br/";
+var BLOG_URL = HOME_URL + "wp-content/themes/ijus-2017/";
 
 (function($) {
     "use strict"; // Start of use strict
@@ -34,7 +34,7 @@ var BLOG_URL = HOME_URL + "wp-content/themes/ijus2017/";
     // Offset for Main Navigation
     $('#mainNav').affix({
         offset: {
-            top: 100
+            top: 300
         }
     });
 
@@ -81,26 +81,25 @@ var BLOG_URL = HOME_URL + "wp-content/themes/ijus2017/";
 
     var windowHeight = $(window).height();
     var windowWidth = $(window).width();
-    console.log(windowWidth);
+    
     window.onresize = function(){
         windowHeight = $(window).height();
         windowWidth = $(window).width();
-        console.log(windowWidth);
     };
-    var w = window.innerWidth;
+    var w = $( window ).width();
     if (w > 700) {
         window.onscroll = function(event){
-            let scroll = document.body.scrollTop;
+            let scroll = $(window).scrollTop();
 
             //Definir classe
-            if (scroll > 100) {
-                navBar.style="height:5px;min-height: 66px;";
-                //logo.src=BLOG_URL+"img/logotipo-passaro-verde.png";
-                logo.style = "margin-top: -6px;";
-                navBarNav.style="margin-top: 0px;";
+            if (scroll > 300) {
+                navBar.style="min-height: 66px;";
+                logo.src=BLOG_URL+"img/logotipo.png";
+                //logo.style = "margin-top: -6px;";
+                navBarNav.style="margin-top: 36px;";
             } else{
                 navBar.style = "height:auto;min-height: 100px;";
-                //logo.src=BLOG_URL+"img/logotipo.png";
+                logo.src=BLOG_URL+"img/logotipo-white.png";
                 navBarNav.style="margin-top: 36px;";
             }
         }
@@ -120,18 +119,18 @@ var BLOG_URL = HOME_URL + "wp-content/themes/ijus2017/";
 })(jQuery); // End of use strict
 
 function loadMovMensal(){
-	var mes = $("#mov-mensal-mes").val();
-	var ano = $("#mov-mensal-ano").val();
-	
-	if(mes != "" && ano != ""){
-		$("#frm-mov-mensal").submit();
-	}
+  var mes = $("#mov-mensal-mes").val();
+  var ano = $("#mov-mensal-ano").val();
+  
+  if(mes != "" && ano != ""){
+    $("#frm-mov-mensal").submit();
+  }
 }
 
 function loadEveTecnico(){
-	$("#frm-eve-tecnico").submit();
+  $("#frm-eve-tecnico").submit();
 }
 
 function loadVisCampo(){
-	$("#frm-vis-campo").submit();
+  $("#frm-vis-campo").submit();
 }
