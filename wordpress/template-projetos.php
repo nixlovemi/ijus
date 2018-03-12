@@ -158,12 +158,14 @@ if ( has_post_thumbnail() ) {
     // projetos parceiros
     $idxProjParceiro = 3;
     $arrArquivos[$idxProjParceiro] = [];
+    $arrUrlLogo                    = [];
 
     $vProjParceiroTitulo     = simple_fields_values("projetos_box_fields_proj_parceria_titulo");
     $vProjParceiroGrupo      = simple_fields_values("projetos_box_fields_proj_parceria_grupo");
     $vProjParceiroTexto      = simple_fields_values("projetos_box_fields_proj_parceria_texto");
     $vProjParceiroArquivo    = simple_fields_values("projetos_box_fields_proj_parceria_arquivo");
     $vProjParceiroUrlArquivo = simple_fields_values("projetos_box_fields_proj_parceria_url_arquivo");
+    $vProjParceiroUrlLogo    = simple_fields_values("projetos_box_fields_proj_parceria_url_logo");
 
     for($i=0; $i<count($vProjParceiroTitulo); $i++){
         $vTitulo     = $vProjParceiroTitulo[$i];
@@ -171,6 +173,7 @@ if ( has_post_thumbnail() ) {
         $vTexto      = $vProjParceiroTexto[$i];
         $vArquivo    = $vProjParceiroArquivo[$i];
         $vUrlArquivo = $vProjParceiroUrlArquivo[$i];
+        $vUrlLogo    = $vProjParceiroUrlLogo[$i];
 
         if(!array_key_exists($vTitulo, $arrArquivos[$idxProjParceiro])){
             $arrArquivos[$idxProjParceiro][$vTitulo] = [];
@@ -185,18 +188,34 @@ if ( has_post_thumbnail() ) {
             "arquivo"     => $vArquivo,
             "url_arquivo" => $vUrlArquivo,
         );
+        
+        if($vUrlLogo != ""){
+            $arrUrlLogo[$vTitulo] = $vUrlLogo;
+        }
+        
     }
 
     $htmlPP  = "";
     $htmlPP .= "<div id='subgrupo-$idxProjParceiro' class='download-subgrupo'>";
     foreach($arrArquivos[$idxProjParceiro] as $titulo => $arrGrupo){
+        $vUrlLogo = $arrUrlLogo[$titulo];
+
         $htmlPP .= "<div class='row' style='text-align: left;'>";
         $htmlPP .= "  <div class='row' style='margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #ccc;'>";
         $htmlPP .= "    <div class='col-lg-1'>";
         $htmlPP .= "      <i class='fa fa-check-circle text-primary'></i>";
         $htmlPP .= "    </div>";
         $htmlPP .= "    <div class='col-lg-10'>";
-        $htmlPP .= "      <p><b>$titulo</b></p>";
+        $htmlPP .= "      <div class='row' style='margin-bottom:20px;'>";
+        $htmlPP .= "        <div class='col-lg-3'>";
+        if($vUrlLogo != ""){
+            $htmlPP .= "      <img src='$vUrlLogo' width='130' height='50' />";
+        }
+        $htmlPP .= "        </div>";
+        $htmlPP .= "        <div class='col-lg-7'>";
+        $htmlPP .= "          <b style='position: relative;top: 20px;'>$titulo</b>";
+        $htmlPP .= "        </div>";
+        $htmlPP .= "      </div>";
 
         foreach($arrGrupo as $grupo => $grupoInfo){
             $htmlPP .= "      <div class='row'>";
