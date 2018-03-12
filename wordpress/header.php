@@ -55,9 +55,6 @@
                             <a class="page-scroll" href="<?php bloginfo('url'); ?>/ijus-jovem/">IJUS Jovem</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="<?php bloginfo('url'); ?>/#noticias">Notícias</a>
-                        </li>
-                        <li>
                             <a class="page-scroll" href="<?php bloginfo('url'); ?>/downloads">Editais & TDRs</a>
                         </li>
                         <li>
@@ -67,16 +64,16 @@
                             <a class="page-scroll" href="<?php bloginfo('url'); ?>/portal-da-transparencia">Transparência</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="<?php bloginfo('url'); ?>/sala-da-imprensa">Sala da imprensa</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="<?php bloginfo('url'); ?>/videos-downloads">Vídeos/Downloads</a>
+                            <a class="page-scroll" href="<?php bloginfo('url'); ?>/#noticias">Notícias</a>
                         </li>
                         <li>
                             <a class="page-scroll" href="<?php bloginfo('url'); ?>/boletim-informativo/">Informativos</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="<?php bloginfo('url'); ?>/agenda/">Agenda</a>
+                            <a class="page-scroll" href="<?php bloginfo('url'); ?>/sala-da-imprensa">Sala da imprensa</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="<?php bloginfo('url'); ?>/videos-downloads">Vídeos/Downloads</a>
                         </li>
                         <li>
                             <a class="page-scroll" href="<?php bloginfo('url'); ?>/contato/">Contato</a>
@@ -84,7 +81,6 @@
                         <li>
                             <a class="page-scroll" href="<?php bloginfo('url'); ?>/doador/">Seja um doador</a>
                         </li>
-
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
