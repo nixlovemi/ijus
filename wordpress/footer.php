@@ -50,6 +50,7 @@
                     <?php
                     $idPgHome = 4;
                     $urlImgCalendario = simple_fields_value("home_box_calendario_fields_url_imagem", $idPgHome);
+                    $urlLnkCalendario = simple_fields_value("home_box_calendario_fields_link", $idPgHome);
                     $strTituloCalNoticias = ($urlImgCalendario != "") ? "&nbsp;": "NOTICIAS";
                     ?>
 
@@ -69,7 +70,8 @@
 
                         <?php
                         if($urlImgCalendario != ""){
-                            echo "<a href='".get_bloginfo('url')."/agenda/' class='text-white'><img class='img-responsive' src='$urlImgCalendario' />";
+                            $urlLnkCalendario = ($urlLnkCalendario != "") ? $urlLnkCalendario: get_bloginfo('url') . '/agenda/';
+                            echo "<a href='".$urlLnkCalendario."' class='text-white'><img class='img-responsive' src='$urlImgCalendario' />";
                         } else {
                             $queryObject = new WP_Query( "post_type=noticias&posts_per_page=4&orderby=date&post_status=publish" );
                             if ($queryObject->have_posts()) {
